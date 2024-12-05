@@ -16,14 +16,14 @@ return {
         'stylua', -- lua formatter
         'eslint_d', -- ts/js linter
         'shfmt', -- Shell formatter
-        'checkmake', -- linter for Makefiles
+        -- 'checkmake', -- linter for Makefiles
         'ruff', -- Python linter and formatter
       },
       automatic_installation = true,
     }
 
     local sources = {
-      diagnostics.checkmake,
+      -- diagnostics.checkmake,
       formatting.prettier.with { filetypes = { 'html', 'json', 'yaml', 'markdown' } },
       formatting.stylua,
       formatting.shfmt.with { args = { '-i', '4' } },
